@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logohn"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"/>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:textColorHint="@color/silver"
+        android:layout_marginTop="@dimen/_140sdp"
+        android:id="@+id/layoutEmail"
+        app:errorEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:shadowColor="@color/blue"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:id="@+id/etEmail"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <RelativeLayout
+        android:id="@+id/layoutPassword"
+        android:layout_below="@+id/layoutEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:textColorHint="@color/silver"
+            app:errorEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:background="@color/white"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:shadowColor="@color/blue"
+                android:hint="Mật khẩu"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+    <Button
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@id/layoutPassword"
+        android:layout_centerHorizontal="true"
+        android:text="Đăng nhập"
+        android:id="@+id/btLogin"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="Đăng ký"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btLogin"
+        android:id="@+id/btRegister"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Fragment.FragmentDatePicker">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="?attr/actionBarSize">
+                                    <ImageView
+                                        android:id="@+id/btBack"
+                                        android:layout_marginLeft="@dimen/_10sdp"
+                                        android:layout_centerVertical="true"
+                                        android:background="@drawable/ic_baseline_arrow_back_24"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+                                    <TextView
+                                        android:textSize="@dimen/_16sdp"
+                                        android:layout_marginLeft="@dimen/_20sdp"
+                                        android:layout_toRightOf="@id/btBack"
+                                        android:layout_centerVertical="true"
+                                        android:textStyle="bold"
+                                        android:text="Chọn ngày"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+                            </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutTop"
+                        android:layout_below="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:textStyle="italic"
+                                android:text="Ngày nhận phòng "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <DatePicker
+                                android:id="@+id/datePickerStart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:datePickerMode="spinner"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:spinnersShown="false" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_below="@id/layoutTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:textStyle="italic"
+                                android:text="Ngày trả phòng "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <DatePicker
+                                android:id="@+id/datePickerFinish"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="16dp"
+                                android:datePickerMode="spinner"
+                                android:spinnersShown="false"
+                                android:layout_marginBottom="@dimen/_50sdp"/>
+                    </RelativeLayout>
+            </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:layout_margin="@dimen/_5sdp"
+        android:text="ÁP DỤNG"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

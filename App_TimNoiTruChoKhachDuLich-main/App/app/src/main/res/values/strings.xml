@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Tìm</string>
+    <string name="travel">Khám phá</string>
+    <string name="love">Yêu thích</string>
+    <string name="setting">Cài đặt</string>
+    <string name="chose">Chọn điểm đến</string>
+    <string name="register">Trở thành thành viên</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="currency">Loại tiền tệ</string>
+    <string name="measure">Đơn vị đo lường</string>
+    <string name="description">Trở thành thành viên để hưởng giá trị đặc biệt</string>
+    <string name="news"><b>Lưu ý trước chuyến đi.</b> Giới hạn liên quan đến COVID- 19 thường xuyên thay đổi.
+        Hãy cập nhật thông tin trước chuyến đi. Hãy giữ an toàn cho bản thân.
+        Để giúp bạn dễ dàng cập nhật, chúng tôi đã tổng hợp tổng quan giới hạn đi lại của mỗi khu vực.</string>
+    <string name="key_google_map">AIzaSyDWR4MmaXuFrMP7MMPrtzGC67m_fGm-ZNw</string>
+</resources>

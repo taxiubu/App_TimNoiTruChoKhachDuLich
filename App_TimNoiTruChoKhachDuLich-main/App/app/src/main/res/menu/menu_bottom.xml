@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    app:cnb_unselectedColor="@color/colorBottomNavigationBar"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homeFragment"
+        android:title="@string/search"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:cnb_backgroundColor="#E1E1E1"
+        app:cnb_iconColor='#0D1F40'
+        app:cnb_textColor='#0D1F40'/>
+    <item
+        android:id="@+id/search"
+        android:title="@string/travel"
+        android:icon="@drawable/ic_baseline_location_on_24"
+        app:cnb_backgroundColor="#E1E1E1"
+        app:cnb_iconColor='#0D1F40'
+        app:cnb_textColor='#0D1F40'/>
+    <item
+        android:id="@+id/love"
+        android:title="@string/love"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        app:cnb_backgroundColor="#E1E1E1"
+        app:cnb_iconColor='#0D1F40'
+        app:cnb_textColor='#0D1F40'/>
+    <item
+        android:id="@+id/profile"
+        android:title="@string/setting"
+        android:icon="@drawable/ic_baseline_settings_24"
+        app:cnb_backgroundColor="#E1E1E1"
+        app:cnb_iconColor='#0D1F40'
+        app:cnb_textColor='#0D1F40'/>
+
+</menu>

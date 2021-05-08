@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:layout_height="match_parent" android:layout_width="match_parent">
+    <RelativeLayout
+        android:background="@color/black"
+        android:id="@+id/layoutNoInternet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_27sdp">
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="@drawable/ic_baseline_signal_wifi_off_24"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"/>
+            <TextView
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:id="@+id/tvNoInternet"
+                android:text="Không có kết nối mạng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_below="@+id/layoutNoInternet"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:id="@+id/frame_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:layout_alignParentBottom="true"
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/rounded"
+        android:elevation="@dimen/_16sdp"
+        android:padding="@dimen/_8sdp"
+        app:cnb_menuResource="@menu/menu_bottom"/>
+
+</RelativeLayout>
