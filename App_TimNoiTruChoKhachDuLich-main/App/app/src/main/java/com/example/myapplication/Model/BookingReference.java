@@ -1,9 +1,9 @@
 package com.example.myapplication.Model;
 
 public class BookingReference {
-    private String dateIn, dateOut, email, nameResidence, countRoom,countPeople, status,phone,id;
+    private String dateIn, dateOut, email, nameResidence, countRoom,countPeople, status,phone;
 
-    public BookingReference(String id,String dateIn, String dateOut, String email,String phone, String nameResidence, String countRoom,String countPeople,String status) {
+    public BookingReference(String dateIn, String dateOut, String email,String phone, String nameResidence, String countRoom,String countPeople,String status) {
         this.dateIn = dateIn;
         this.dateOut = dateOut;
         this.email = email;
@@ -12,7 +12,6 @@ public class BookingReference {
         this.phone=phone;
         this.status=status;
         this.countPeople=countPeople;
-        this.id=id;
     }
 
     public String getCountPeople() {

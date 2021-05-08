@@ -221,7 +221,7 @@ DetailItemAct extends AppCompatActivity {
                             phone[0] =e.getValue(UserProfile.class).getPhoneNumber();
                         }
                     }
-                    BookingReference b= new BookingReference("Key",dateIn,dateOut,email, phone[0],nameResidence,countRoom,countPeople,"Chờ duyệt");
+                    BookingReference b= new BookingReference(dateIn,dateOut,email, phone[0],nameResidence,countRoom,countPeople,"Chờ duyệt");
                     mData.child("bookingreference").push().setValue(b);
                     Toast.makeText(getBaseContext(),"Đặt thành công",Toast.LENGTH_SHORT).show();
                 }
